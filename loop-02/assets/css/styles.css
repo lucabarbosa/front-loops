@@ -58,16 +58,31 @@ h1 {
     border-top: 1px solid rgba(0,0,0,.1);
 }
 
+.payment:hover {
+    background-color: #efefef;
+    transition: 0.3s;
+}
+
 .payment__icon {
     width: 45px;
     margin: 0 20px;
 }
 
+.payment__checked .payment__title {
+    color: #000;
+}
+
 .payment__title {
+    color: #919191;
     font-size: 13px;
     font-weight: 500;
     letter-spacing: 1px;
     text-transform: uppercase;
+}
+
+.payment__check {
+    margin-left: auto;
+    width: 18px;
 }
 
 .checkout__next {
@@ -82,6 +97,8 @@ h1 {
     text-transform: uppercase;
     text-decoration: none;
 }
+
+
 
 .arrow {
     margin-left: 3px;
