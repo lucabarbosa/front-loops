@@ -6,9 +6,32 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Loop 1 - Step 2</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./assets/css/normalize.css"/>
+  <link rel="stylesheet" href="./assets/css/styles.css"/>
 </head>
 <body>
-  
+  <section class="checkout">
+    <div class="dots">
+      <div class="dot dot--checked"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+    <h1 class="checkout__title">Payment Method</h1>
+    <div class="payment-methods">
+      <div class="payment">
+          <img class="payment__icon" src="./assets/img/visa.svg" alt="">
+          <h3 class="payment__title">Visa</h3>
+        </div>
+        <div class="payment">
+          <img class="payment__icon" src="./assets/img/mastercard.svg" alt="">
+          <h3 class="payment__title">MasterCard</h3>
+        </div>
+        <div class="payment">
+          <img class="payment__icon" src="./assets/img/maestro.svg" alt="">
+          <h3 class="payment__title">Maestro</h3>
+        </div>
+      </div>
+    <a class="checkout__next" href="#">Next Step<img class="arrow" src="./assets/img/arrow.svg" alt=""></a>
+  </section>
 </body>
 </html>
