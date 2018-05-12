@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #16a085;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card {
+    background-color: #fff;
+    background-image: url('../img/bicycle.png');
+    background-position: 0 180px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, .3);
+    margin: 80px auto;
+    padding: 40px 60px;
+    width: 600px;
+    height: 460px;
+}
+
+.shopping-header,
+.product,
+.cart-total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.shopping-header__title {
+    font-size: 18px;
+}
+
+.icon-box {
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-box:hover {
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, .1);
+    transition: .2s;
+}
+
+.icon-box__image {
+    width: 70%;
+    height: 70%;
+}
+
+.shopping-info__description {
+    color: #bdbdbd;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.shop-cart {
+    margin-top: 20px;
+}
+
+.product {
+    font-weight: 500;
+}
+
+.product__description {
+    color: #858585;
+    font-size: 15px;
+}
+
+.product__price {
+    font-size: 17px;
+}
+
+.cart-total {
+    font-weight: 700;
+}
+
+.cart-total__title {
+    font-size: 19px;
+    text-transform: uppercase;
+    color: #757575;
+}
