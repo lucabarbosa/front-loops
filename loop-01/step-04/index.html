@@ -12,6 +12,7 @@
 <body>
   
   <div class="messenger">
+
     <div class="messenger-header">
       <span class="messenger-header__active"></span>
       <h3 class="messenger-header__user">Mark Zuckerberg</h3>
@@ -19,33 +20,41 @@
         <img class="icon-box__image" src="./assets/img/close.svg" alt="close">
       </div>
     </div>
+
     <div class="messenger-content">
       <div class="messages">
-        <span class="messenger-content__day">Today</span>
         
-        <div class="message">
+        <div class="day-header">
+          <hr>
+          <span class="day-header__day">Today</span>
+          <hr>
+        </div>
+        
+        <div class="message message--user">
           <span class="message__time">10:53</span>
           <div class="message-content">
             <p class="message-content__text">Hi, Mark!I made a new design for Messenger App.</p>
           </div>
         </div>
 
-        <div class="message">
+        <div class="message message--me">
           <span class="message__time">10:57</span>
           <div class="message-content">
             <p class="message-content__text">Yo! Send it to my assistant and we'll review it during the year.</p>
           </div>
         </div>
 
-        <div class="message">
+        <div class="message message--user">
           <span class="message__time">11:03</span>
           <div class="message-content">
             <p class="message-content__text">But Mark...</p>
           </div>
         </div>
 
-        <div class="alert--error">
-          <p class="alert__text">You were blocked by the user.</p>
+        <div class="alert message--me">
+          <div class="alert-content alert-content--error">
+            <p class="alert-content__text">You were blocked by the user.</p>
+          </div>
         </div>
       </div>
 
