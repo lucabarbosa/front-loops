@@ -74,6 +74,11 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
         opacity: .5;
     }
 
+    .icon-box__image:hover {
+        opacity: 1;
+        transition: .3s;
+    }
+
 
 
 
@@ -138,6 +143,9 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 }
 
 
+
+
+
 /*------------------------------------*\
   #MESSAGE-CONTENT-SECTION
 \*------------------------------------*/
@@ -198,4 +206,8 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
         font-size: 14px;
         font-weight: 500;
         letter-spacing: 2px;
+    }
+
+    .messenger-form__submit:hover {
+        cursor: pointer;
     }
