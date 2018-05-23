@@ -104,6 +104,11 @@ body {
         text-transform: uppercase;
     }
 
+    .card-footer__email-link:hover {
+        color: #000;
+        transition: .5s;
+    }
+
 
 
 
@@ -146,6 +151,17 @@ body {
     padding:       15px 20px;
     border:        1px solid #dfdfdf;
     border-radius: 5px;
+}
+
+.social-network:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    transition: .3s;
+}
+
+.social-network:hover .social-network__description {
+    color: #000;
+    transition: .3s;
 }
 
     .social-network__logo {
