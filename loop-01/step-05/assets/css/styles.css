@@ -4,4 +4,134 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background: url('../img/background.jpg');
+    background-position-y: center;
+    background-size: cover;
 }
+
+h1, h2, h3, h4, h5, h6, p { margin: 0; }
+
+/*------------------------------------*\
+  #CARD-SECTION
+\*------------------------------------*/
+
+.card {
+    border-radius: 3px;
+    margin:        70px auto;
+    padding:       40px;
+    width:         430px;
+    background-color: #fff;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #ITINERARY
+\*------------------------------------*/
+
+.itinerary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+    .itinerary__separator {
+        background-color: #d3e6f4;
+        width:  32px;
+        height: 4px;
+    }
+
+
+
+
+
+/*------------------------------------*\
+  #LOCATION-SECTION
+\*------------------------------------*/
+
+.location {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.location--right { align-items: flex-end; }
+
+    .location__short-city {
+        color: #3b8acf;
+        font-size: 55px;
+        font-family: 'Prompt';
+        text-transform: uppercase;
+    }
+
+    .location__full-city {
+        color: #abb5c2;
+        font-size:   15px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    
+
+
+
+/*------------------------------------*\
+  #FLIGHT-SECTION
+\*------------------------------------*/
+
+.flight {
+    display: flex;
+    margin: 20px 0;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #DETAIL-SECTION
+\*------------------------------------*/
+
+.detail {
+    margin-right: 70px;
+}
+
+    .detail__property {
+        color: #abb5c2;
+        font-size:   13px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    .detail__value {
+        margin:    5px 0;
+        font-size: 15px;
+    }
+
+
+
+
+
+/*------------------------------------*\
+  #PASSENGER-SECTION
+\*------------------------------------*/
+   
+.passenger {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+    .passenger-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .passenger-info,
+    .qrcode {
+        flex: 1;
+    }

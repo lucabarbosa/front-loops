@@ -11,52 +11,54 @@
   <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
-  <div>
+  <div class="card">
 
-    <div>
-      <div>
-        <h1>FRA</h1>
-        <h3>Frankfurt</h3>
+    <div class="itinerary">
+      <div class="location">
+        <h1 class="location__short-city">FRA</h1>
+        <h3 class="location__full-city">Frankfurt</h3>
       </div>
-      <span>-</span>
-      <div>
-        <h1>AMS</h1>
-        <h3>Amsterdam</h3>
+      
+      <span class="itinerary__separator"></span>
+      
+      <div class="location location--right">
+        <h1 class="location__short-city">AMS</h1>
+        <h3 class="location__full-city">Amsterdam</h3>
       </div>
     </div>
 
-    <div>
-      <div>
-        <h5>Flight</h5>
-        <p>815</p>
+    <div class="flight">
+      <div class="detail">
+        <h5 class="detail__property">Flight</h5>
+        <p class="detail__value">815</p>
       </div>
-      <div>
-        <h5>Gate</h5>
-        <p>23G</p>
+      <div class="detail">
+        <h5 class="detail__property">Gate</h5>
+        <p class="detail__value">23G</p>
       </div>
-      <div>
-        <h5>Seat</h5>
-        <p>10F</p>
+      <div class="detail">
+        <h5 class="detail__property">Seat</h5>
+        <p class="detail__value">10F</p>
       </div>
     </div>
 
-    <div>
-      <div>
-        <div>
-          <h5>Passenger</h5>
-          <p>Robert De Niro</p>
+    <div class="passenger">
+      <div class="passenger-info">
+        <div class="detail">
+          <h5 class="detail__property">Passenger</h5>
+          <p class="detail__value">Robert De Niro</p>
         </div>
-        <div>
-          <h5>Class</h5>
-          <p>Business</p>
+        <div class="detail">
+          <h5 class="detail__property">Class</h5>
+          <p class="detail__value">Business</p>
         </div>
-        <div>
-          <h5>Departure</h5>
-          <p>3:45am, Dec15</p>
+        <div class="detail">
+          <h5 class="detail__property">Departure</h5>
+          <p class="detail__value">3:45am, Dec15</p>
         </div>
       </div>
 
-      <img src="./assets/img/qr.svg" alt="QRCode">
+      <img class="qrcode" src="./assets/img/qr.svg" alt="QRCode">
     </div>
   </div>
 </body>
