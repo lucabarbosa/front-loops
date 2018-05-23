@@ -1,0 +1,165 @@
+h1, h2, h3, h4, h5, h6 { margin: 0; }
+
+body {
+    background-color: #4d515d;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #CARD-SECTION
+\*------------------------------------*/
+
+.card {
+    display: flex;
+    flex-direction: row;
+    border-radius: 3px;
+    width:         900px;
+    height:        551px;
+    margin:        45px auto;
+    background-color: #fff;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, .2);
+    overflow: hidden;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #CARD-LEFT-SECTION
+\*------------------------------------*/
+
+.card-left {
+    flex: 5;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #CARD-RIGHT-SECTION
+\*------------------------------------*/
+
+.card-right {
+    flex: 3;
+    background: url('../img/side.jpg');
+    background-size: cover; 
+}
+
+
+
+
+
+/*------------------------------------*\
+  #CARD-HEADER-SECTION
+\*------------------------------------*/
+
+.card-header {
+    margin: 20px 0;
+}
+
+    .card-header__title {
+        font-size:     36px; 
+        font-weight:   300;
+        margin-bottom: 15px;
+    }
+
+    .card-header__description {
+        color: #a0a0a0;
+        font-size:   12px;
+        font-weight: 500;
+    }
+
+
+
+
+
+/*------------------------------------*\
+  #CARD-FOOTER-SECTION
+\*------------------------------------*/
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #dfdfdf;
+    padding:    30px 60px;
+}
+
+    .card-footer__description {
+        font-size:   11px;
+        font-weight: 500;
+    }
+
+    .card-footer__email-link {
+        color: #686a6d;
+        font-weight: 700;
+        font-size:   11px;
+        letter-spacing: -.2px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+
+
+
+
+/*------------------------------------*\
+  #SIGNUP-SECTION
+\*------------------------------------*/
+
+.signup {
+    padding: 40px 60px;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #NETWORKS-SECTION
+\*------------------------------------*/
+
+.networks {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0 10px;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #SOCIAL-NETWORK-SECTION
+\*------------------------------------*/
+
+.social-network {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin:        10px 0;
+    padding:       15px 20px;
+    border:        1px solid #dfdfdf;
+    border-radius: 5px;
+}
+
+    .social-network__logo {
+        width: 25px;
+    }
+
+    .social-network__description {
+        color: #686a6d;
+        font-size:   12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0 auto;
+    }
+
+
+
+
