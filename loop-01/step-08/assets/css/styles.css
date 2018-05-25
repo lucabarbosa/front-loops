@@ -1,0 +1,244 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #faeae9;
+}
+
+h1, h2, h3, h4, h5, h6, p, figure { margin: 0; }
+
+/*------------------------------------*\
+  #CARD-SECTION
+\*------------------------------------*/
+
+.card {
+    display: flex;
+    flex-direction: row;
+    margin: 30px auto;
+    width:  900px;
+    height: 570px;
+    background-color: #fff;
+    box-shadow: 0px 35px 20px -8px#D8A69F;
+}
+
+
+
+.cover,
+.content {
+    padding: 32px 25px;
+}
+
+/*------------------------------------*\
+  #COVER-SECTION
+\*------------------------------------*/
+
+.cover {
+    flex: 1;
+    background: url('../img/background.jpg');
+    background-size: cover;
+}
+
+    .cover__link {
+        display: flex;
+        align-items: center;
+        color: #5c7b96;
+        font-size:   12px;
+        font-weight: 700;
+        letter-spacing: -.2px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .cover__arrow {
+        margin-right: 4px;
+        width:        16px;
+        opacity:      .4;
+    }
+
+
+
+
+
+/*------------------------------------*\
+  #CONTENT-SECTION
+\*------------------------------------*/
+
+.content {
+    flex: 2;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #MENU-SECTION
+\*------------------------------------*/
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+    .menu__item {
+        list-style: none;
+        margin-right: 30px;
+    }
+
+        .menu__item:last-child {
+            margin-right: 0;
+        }
+
+        .menu__item a {
+            color: #989898;
+            font-size:      12px;
+            font-weight:    500;
+            letter-spacing: -.2px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .menu__item--active a {
+            color: #000;
+        }
+
+
+
+
+
+/*------------------------------------*\
+  #POST-SECTION
+\*------------------------------------*/
+
+.post {
+    position: relative;
+    padding: 95px 70px;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #POST-HEADER-SECTION
+\*------------------------------------*/
+
+.post-header {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Playfair Display', serif;
+}
+
+.post-header:after {
+    position: absolute;
+    right: 75px;
+    top:   192px;
+    content: '';
+    width: 18%;
+    height: 4px;
+    background-color: #363636;
+}
+
+    .post-header__title {
+        font-size:   52px;
+        font-weight: 500;
+    }
+
+    .post-header__subtitle {
+        font-size:   16px;
+        font-weight: 500;
+        margin-top:  25px;
+    }
+
+
+
+
+
+/*------------------------------------*\
+  #POST-CONTENT-SECTION
+\*------------------------------------*/
+
+.post-content {
+    display: flex;
+    flex-direction: row;
+    margin: 40px 0;
+}   
+
+    .post-content__text {
+        font-weight: 300;
+        font-size:   14px;
+        line-height: 1.8;
+        margin-left: 35px;
+    }
+
+
+
+
+
+/*------------------------------------*\
+  #VIDEO-PREVIEW-SECTION
+\*------------------------------------*/
+
+.video-preview {
+    position: relative;
+}
+
+    .video-preview__image {
+        width: 160px;
+    }
+
+
+
+
+
+/*------------------------------------*\
+  #PLAY-BUTTON-SECTION
+\*------------------------------------*/
+
+.play-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height:  40px;
+    width:   40px;
+    background-color:rgba(255, 255, 255, .7);
+    position: absolute;
+    top:     33px;
+    left:    60px;
+}
+
+    .play-button__icon {
+        opacity: 1;
+    }
+
+
+
+    
+
+/*------------------------------------*\
+  #CAPTION-SECTION
+\*------------------------------------*/
+
+.caption {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+    .caption__link {
+        display: flex;
+        align-items: center;
+        color: #363636;
+        font-size:      12px;
+        font-weight:    500;
+        letter-spacing: -.2px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .caption__arrow {
+        margin: 0 8px;
+        width:  17px;
+        opacity: .8;
+    }
