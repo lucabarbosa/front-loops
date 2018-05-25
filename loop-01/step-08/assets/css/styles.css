@@ -53,6 +53,16 @@ h1, h2, h3, h4, h5, h6, p, figure { margin: 0; }
         opacity:      .4;
     }
 
+    .cover__link:hover {
+        color: #000;
+        transition: .5s;
+    }
+
+    .cover__link:hover .cover__arrow {
+        opacity: 1;
+        transition: .5s;
+    }
+
 
 
 
@@ -84,6 +94,11 @@ h1, h2, h3, h4, h5, h6, p, figure { margin: 0; }
     .menu__item {
         list-style: none;
         margin-right: 30px;
+    }
+
+    .menu__item:hover a {
+        color: #000;
+        transition: .5s;
     }
 
         .menu__item:last-child {
@@ -184,6 +199,10 @@ h1, h2, h3, h4, h5, h6, p, figure { margin: 0; }
     position: relative;
 }
 
+.video-preview:hover {
+    cursor: pointer;
+}
+
     .video-preview__image {
         width: 160px;
     }
@@ -241,4 +260,14 @@ h1, h2, h3, h4, h5, h6, p, figure { margin: 0; }
         margin: 0 8px;
         width:  17px;
         opacity: .8;
+    }
+
+    .caption__link:hover {
+        color: #000;
+        transition: .5s;
+    }
+
+    .caption__link:hover .caption__arrow {
+        opacity: 1;
+        transition: .5s;
     }
