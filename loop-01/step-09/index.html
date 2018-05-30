@@ -6,106 +6,132 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Loop 1 - Step 9</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./assets/css/normalize.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
 
-  <section>
-    <section>
-      <header>
-        <h2>My Wallets</h2>
-        <img src="./assets/img/plus.svg" alt="plus-icon">
+  <main class="card">
+    <section class="wallet">
+      <header class="wallet__header">
+        <h2 class="wallet__title">My Wallets</h2>
+        <img class="wallet__add-card" src="./assets/img/plus.svg" alt="plus-icon">
       </header>
       
-      <section>
-        <div>
-          <img src="./assets/img/visa.svg" alt="visa-brand">
-          <div>  
-            <div>**** **** **** 2562</div>
-            <div>Valid thru: 12/17</div>
+      <section class="wallet__credit-cards">
+        <div class="credit-card">
+          <img class="credit-card__brand" src="./assets/img/visa.svg" alt="visa-brand">
+          <div class="credit-card__meta">  
+            <div class="credit-card__number">**** **** **** 2562</div>
+            <div class="credit-card__expiration-date">Valid thru: 12/17</div>
           </div>
         </div>
 
-        <div>
-          <img src="./assets/img/mastercard.svg" alt="visa-brand">
-          <div>  
-            <div>**** **** **** 2101</div>
-            <div>Valid thru: 07/19</div>
+        <div class="credit-card credit-card--selected">
+          <img class="credit-card__brand" src="./assets/img/mastercard.svg" alt="mastercard-brand">
+          <div class="credit-card__meta">  
+            <div class="credit-card__number">**** **** **** 2101</div>
+            <div class="credit-card__expiration-date">Valid thru: 07/19</div>
           </div>
         </div>
 
-        <div>
-          <img src="./assets/img/maestro.svg" alt="visa-brand">
-          <div>  
-            <div>**** **** **** 2562</div>
-            <div>Valid thru: 12/17</div>
+        <div class="credit-card">
+          <img class="credit-card__brand" src="./assets/img/maestro.svg" alt="maestro-brand">
+          <div class="credit-card__meta">  
+            <div class="credit-card__number">**** **** **** 8335</div>
+            <div class="credit-card__expiration-date">Valid thru: 09/17</div>
           </div>
         </div>
       </section>
-
     </section>
 
-    <section>
-      <header>
-        <h2>Current Balance</h2>
-        <h2>$729.<sup>00</sup></h2>
+    <section class="statment">
+      <header class="statment__header">
+        <h2 class="statment__title">Current Balance</h2>
+        <h2 class="statment__amount">$729.<sup>00</sup></h2>
       </header>
 
-      <section>
-        <div>
-          <div>
-            <img src="./assets/img/minus.svg" alt="minus-icon">          
+      <section class="statment__releases">
+        <div class="release">
+          <div class="release__state">
+            <img class="release__icon" src="./assets/img/minus.svg" alt="minus-icon">          
           </div>
 
-          <div>
-            <h3>Apple iPhone 7, 128GB</h3>
-            <p>Electronics #32343424 - 12 July 2015</p>
+          <div class="release__product">
+            <h3 class="release__name">Apple iPhone 7, 128GB</h3>
+            <p class="release__detail">Electronics #32343424 - 12 July 2015</p>
           </div>
 
-          <div>$650.<sup>00</sup></div>
+          <div class="release__value release__value--negative">$650.<sup>00</sup></div>
         </div>
 
-        <div>
-          <div>
-            <img src="./assets/img/plus.svg" alt="minus-icon">          
+        <div class="release">
+          <div class="release__state">
+            <img class="release__icon" src="./assets/img/plus.svg" alt="minus-icon">          
           </div>
 
-          <div>
-            <h3>Funds Added</h3>
-            <p>Payment #5435 - 11 July 2015</p>
+          <div class="release__product">
+            <h3 class="release__name">Funds Added</h3>
+            <p class="release__detail">Payment #5435 - 11 July 2015</p>
           </div>
 
-          <div>$900.<sup>00</sup></div>
+          <div class="release__value">$900.<sup>00</sup></div>
         </div>
 
-        <div>
-          <div>
-            <img src="./assets/img/minus.svg" alt="minus-icon">          
+        <div class="release">
+          <div class="release__state">
+            <img class="release__icon" src="./assets/img/minus.svg" alt="minus-icon">          
           </div>
 
-          <div>
-            <h3>Energy Bill</h3>
-            <p>Other #745237423 - 11 July 2015</p>
+          <div class="release__product">
+            <h3 class="release__name">Energy Bill</h3>
+            <p class="release__detail">Other #745237423 - 11 July 2015</p>
           </div>
 
-          <div>$84.<sup>90</sup></div>
+          <div class="release__value release__value--negative">$84.<sup>90</sup></div>
         </div>
 
-        <div>
-          <div>
-            <img src="./assets/img/minus.svg" alt="minus-icon">          
+        <div class="release">
+          <div class="release__state">
+            <img class="release__icon" src="./assets/img/minus.svg" alt="minus-icon">          
           </div>
 
-          <div>
-            <h3>The Eye Cinema Ticket</h3>
-            <p>Entertainment #32343424 - 10 July 2015</p>
+          <div class="release__product">
+            <h3 class="release__name">The Eye Cinema Ticket</h3>
+            <p class="release__detail">Entertainment #32343424 - 10 July 2015</p>
           </div>
 
-          <div>$40.<sup>00</sup></div>
+          <div class="release__value release__value--negative">$40.<sup>00</sup></div>
+        </div>
+
+        <div class="release">
+          <div class="release__state">
+            <img class="release__icon" src="./assets/img/minus.svg" alt="minus-icon">          
+          </div>
+
+          <div class="release__product">
+            <h3 class="release__name">McFood Restaurant</h3>
+            <p class="release__detail">Cafes #32448 - 10 July 2015</p>
+          </div>
+
+          <div class="release__value release__value--negative">$10.<sup>50</sup></div>
+        </div>
+
+        <div class="release">
+          <div class="release__state">
+            <img class="release__icon" src="./assets/img/minus.svg" alt="minus-icon">          
+          </div>
+
+          <div class="release__product">
+            <h3 class="release__name">Gas Station</h3>
+            <p class="release__detail">Other #2138453 - 10 July 2015</p>
+          </div>
+
+          <div class="release__value release__value--negative">$30.<sup>00</sup></div>
         </div>
       </section>
     </section>
-  </section>
+  </main>
 
 </body>
 </html>
