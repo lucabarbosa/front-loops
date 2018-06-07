@@ -23,19 +23,17 @@
     and use @import to get them combined in the main.css file.
   -->
 
-  <header>
-    <div>
-      <a href="index.html"><img src="./assets/img/logo.svg" alt="Apple"></a>
+  <header class="container page-header">
+    <a href="index.html"><img class="page-header__brand-image" src="./assets/img/logo.svg" alt="Apple"></a>
 
-      <nav>
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Offers</a></li>
-          <li><a href="#">Services</a></li>
-          <li><input type="text" placeholder="How can we help you?"></li>
-        </ul>
-      </nav>
-    </div>
+    <nav class="navbar">
+      <ul class="menu">
+        <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Offers</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+        <li class="menu__item"><input class="menu__input" type="text" placeholder="How can we help you?"></li>
+      </ul>
+    </nav>
   </header>
   
   <section>
@@ -54,7 +52,7 @@
     </div>
   </section>
 
-  <section>
+  <section class="container">
     <article>
       <h3>Know your runs. In and Out.</h3>
 
@@ -100,7 +98,7 @@
     </article>
   </section>
 
-  <section>
+  <section class="container">
     <h2>Nike Sport Band.
       Light. Flexible.
       Breathable.</h2>
