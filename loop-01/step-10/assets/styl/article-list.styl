@@ -1,0 +1,31 @@
+.article-list
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-gap: 70px
+
+.article
+    &__title
+        color: #363636
+        font-size: 14px
+        text-transform: uppercase
+
+    &__text
+        color: #363636
+        font-size: 13px
+        line-height: 1.6
+        margin: 40px 0 20px
+
+    &__link 
+        color: #fa5c5f
+        font-size: 13px
+        font-weight: 700
+        text-transform: uppercase
+        display: flex
+        align-items: center
+        
+        &:before
+            content: ''        
+            background: #fa5c5f
+            width: 30px
+            height: 2px
+            margin-right: 10px

@@ -1,0 +1,25 @@
+.section
+    align-items: center
+    height: 100%
+    
+    &--two-col
+        display: grid
+        grid-template: "a b" 1fr / 1fr 1fr 
+        grid-gap: 60px
+
+    &__title
+        color: #363636
+        font-size: 38px
+        max-width: 340px
+
+
+    &__content        
+        &--white .section__title
+        &--white .quote__text
+            color: #fff 
+
+        &--white .quote
+            border-color: #fff
+
+    &__right-col
+        grid-area: b
