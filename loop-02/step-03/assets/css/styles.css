@@ -4,4 +4,152 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, p { margin: 0; }
+ul, li { margin: 0; padding: 0; }
+li { list-style: none; }
 
+/*------------------------------------*\
+  CARD
+\*------------------------------------*/
+
+.card {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px 5px rgba(0,0,0,.3);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: 90px auto;
+    width: 260px;
+}
+
+
+
+
+
+/*------------------------------------*\
+  FOLDER
+\*------------------------------------*/
+
+.folder--first .folder__header {
+    padding-top: 35px;
+}
+
+.folder__header,
+.folder__content {
+    padding: 20px;
+}
+
+.folder__header {
+    background: linear-gradient(to right, #bf7cd4, #ab79cd);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.folder__title {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 10px;
+}
+
+.folder__content {
+    background: #60537d;
+}
+
+.folder__expand-icon {
+    margin-left: auto;
+}
+
+
+
+
+
+/*------------------------------------*\
+  FOLDER-ICON
+\*------------------------------------*/
+
+.folder-icon {
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    width: 20px;
+    height: 20px;
+}
+
+.folder--first .folder-icon::before {
+    height: 50%;
+}
+
+.folder-icon::before {
+    content: "";
+    background: #fff;
+    height: 100%;
+    width: 2px;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+
+.folder-icon__image {
+    max-width: 60%;
+    z-index: 1;
+}
+
+
+
+
+
+/*------------------------------------*\
+  FOLDER-LIST
+\*------------------------------------*/
+
+.folder-list {
+    position: relative;
+}
+
+.folder-list:before,
+.folder-list:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 2px;
+    height: 1.2em;
+    background: #dedede;
+    left: 9px;
+}
+
+.folder-list:before {
+    top: -20px;
+}
+
+.folder-list:after {
+    bottom: -20px;
+}
+
+.folder-list__item {
+    color: #dedede;
+    font-size: 14px;
+    font-weight: 500;
+    list-style: disc;
+    margin-left: 20px;
+    padding-left: 10px;
+    position: relative;
+}
+
+.folder-list__item:not(:last-child) {
+    margin-bottom: 18px;
+}
+
+.folder-list__item:not(:last-child):after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 2px;
+    height: 1em;
+    background: #dedede;
+    left: -11px;
+    top: 1.3em;
+}
