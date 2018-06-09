@@ -120,6 +120,8 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 
 .form-field__text-area {
     resize: vertical;
+    font-family: inherit;
+    font-weight: inherit;
 }
 
 
