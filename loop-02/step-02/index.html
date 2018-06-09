@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loop 2 - Step 2</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!--
+    FYI:
+    Textarea resize in the design is a native feature of browsers.
+    Also there is no close icon in the assets, so you should try to find another way of implementing it.
+  -->
+
+  <section class="box">
+    <header class="box__header">
+      <h1 class="box__title">Account settings</h1>
+      <span class="box__close-icon close-icon"></span>
+    </header>
+
+    <form class="register-form">
+      <img class="register-form__avatar" src="./assets/img/avatar.jpg" alt="User Avatar">
+
+      <section class="register-form__fields">
+        <label class="form-field" for="username">
+          <span class="form-field__name">Username</span>
+          <input class="form-field__value" type="text" id="username" placeholder="Enter your username">
+        </label>
+
+        <label class="form-field" for="firstname">
+          <span class="form-field__name">First Name</span>
+          <input class="form-field__value" type="text" id="firstname" placeholder="Enter your first name">
+        </label>
+
+        <label class="form-field" for="lastname">
+          <span class="form-field__name">Last Name</span>
+          <input class="form-field__value" type="text" id="lastname" placeholder="Enter your last name">
+        </label>
+
+        <label class="form-field" for="mail">
+          <span class="form-field__name">Email</span>
+          <input class="form-field__value" type="email" id="mail" placeholder="Enter your email">
+        </label>
+
+        <label class="form-field" for="biography">
+          <span class="form-field__name">Bio</span>
+          <textarea class="form-field__value" id="biography" rows="6" placeholder="Tell us about yourself"></textarea>        
+        </label>
+      </section>
+    </form>
+
+    <div class="box__buttons">
+      <a class="button" href="#">Cancel</a>
+      <a class="button" href="#">Save</a>
+    </div>
+  </section>
+</body>
+</html>
