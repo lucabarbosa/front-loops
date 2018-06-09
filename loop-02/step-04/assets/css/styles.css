@@ -63,4 +63,71 @@ a { text-decoration: none; }
 
 .box {
     background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px -5px rgba(0,0,0,.4);
+    margin: 30px 40px;
+    overflow: hidden;
+}
+
+.box__header {
+    background: url('../img/food.jpg') no-repeat center;
+    background-size: cover;
+    color: #fff;
+    padding: 70px 18px 18px;
+}
+
+.box__title {
+    font-size: 24px;
+}
+
+
+
+
+
+/*------------------------------------*\
+  LOCATION
+\*------------------------------------*/
+
+.location {
+    display: flex;
+    align-items: center;
+    margin: 5px 0 0;
+}
+
+.location__icon {
+    width: 17px;
+}
+
+.location__city {
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0 2px;
+}
+
+
+
+
+
+/*------------------------------------*\
+  FOOD-LIST
+\*------------------------------------*/
+
+.food-list__item {
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between; 
+    padding: 20px 18px;
+}
+
+.food-list__name,
+.food-list__price {
+    font-size: 13px;
+    font-weight: 500;
+    color: #a9a9a9;
+}
+
+.food-list__item:hover .food-list__price {
+    color: #000;
+    transform: scale(1.4);
+    transition: .3s;
 }
