@@ -1,10 +1,7 @@
 body {
+    background: linear-gradient(to bottom, #ba83e1, #7e88e9) fixed;
     font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, p { margin: 0; }
 
-
-/*------------------------------------*\
-  COMMENT TYPE
-\*------------------------------------*/
