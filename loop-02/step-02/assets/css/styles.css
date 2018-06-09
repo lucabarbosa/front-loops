@@ -1,0 +1,140 @@
+body {
+    background: #333;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p { margin: 0; }
+
+
+
+
+
+/*------------------------------------*\
+  #BOX
+\*------------------------------------*/
+
+.box {
+    background: #ffea64;
+    margin: 20px auto;
+    padding: 25px 50px;
+    width: 350px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.box__header {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box__title {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #REGISTER-FORM
+\*------------------------------------*/
+
+.register-form {
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    margin: 25px 0 20px;
+    padding: 35px;
+    position: relative;
+}
+
+.register-form__avatar {
+    border-radius: 50%;
+    position: absolute;
+    top: -27.5px;
+    width: 55px;
+}
+
+.register-form__fields {
+    margin: 5px 0 0;
+    display: grid;
+    grid-template: 
+        "a a" auto
+        "b c" auto
+        "d d" auto
+        "e e" auto
+        / 1fr 1fr;
+}
+
+.username { grid-area: a; }
+.firsname { grid-area: b; }
+.lastname { grid-area: c; }
+.email    { grid-area: d; }
+.bio      { grid-area: e; }
+
+
+
+
+
+/*------------------------------------*\
+  #FORM-FIELD
+\*------------------------------------*/
+
+.form-field {
+    display: block;
+    margin: 13px 0;
+}
+
+.form-field__name {
+    display: block;
+    color: #a9a9a9;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.form-field__value {
+    border: 0;
+    border-bottom: 1px solid #ddd;
+    color: #000;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 6px 0;
+    width: 100%;
+}
+
+.form-field__text-area {
+    resize: vertical;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #BUTTON
+\*------------------------------------*/
+
+.box__buttons {
+    align-self: flex-end;
+}
+
+.button {
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+    opacity: .5;
+    padding: 10px;
+}
+
+.button:not(:last-child) {
+    margin-right: 20px;
+}
+
+.button:hover {
+    opacity: 1;
+    transition: .4s;
+}
