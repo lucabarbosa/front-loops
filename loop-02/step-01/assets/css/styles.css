@@ -41,10 +41,6 @@ li { list-style: none; }
   #MENU-SECTION
 \*------------------------------------*/
 
-.nav-bar {
-
-}
-
 .menu {
     display: flex;
     flex-direction: row;
@@ -68,4 +64,88 @@ li { list-style: none; }
 
 .menu__link:hover:not(.menu__link--selected)  {
     color: #f5c5c6;
+}
+
+.interface {
+    position: relative;
+}
+
+.setting-list {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.setting {
+    background: #413e3f;
+    padding: 100px 50px;
+    flex-grow: 1;
+}
+
+.setting__name {
+    color: #db8c88;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.setting__value {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.setting--temperature {
+    background: #383637; 
+}
+
+.setting--load {
+    background: #252324; 
+}
+
+
+.button {
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.button--command {
+    background: #fff;
+    opacity: .5;
+    width:  80px;
+    height: 80px;
+}
+
+.button--command:hover {
+    opacity: .7;
+    transition: .3s;
+}
+
+.button--start {
+    background: #1a1a1a;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 500;
+    min-width: 230px;
+    padding: 20px 0;
+    position: absolute;
+    text-transform: uppercase;
+    bottom: -30px;
+    left: 10px;
+    transition: .3s;
+}
+
+.button--start:hover {
+    transform: translateY(-5px);
+}
+
+.button--back {
+    position: absolute;
+    left: -80px;
+}
+
+.button--next {
+    position: absolute;
+    right: -80px;
 }
