@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 }
 
 .box__header {
-    margin: 20px 0;
+    margin: 15px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -61,6 +61,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
     margin: 25px 0 20px;
     padding: 35px;
     position: relative;
+    width: 110%;
 }
 
 .register-form__avatar {
@@ -97,7 +98,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 
 .form-field {
     display: block;
-    margin: 13px 0;
+    margin: 9px 0;
 }
 
 .form-field__name {
