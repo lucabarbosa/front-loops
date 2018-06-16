@@ -12,9 +12,13 @@
 <body>
 
   <section class="card">
-    <h1 class="card__title">Card</h1>
+    <div class="notch"></div>
+    
+    <header class="card__header">
+      <h1 class="card__title">Card</h1>
+    </header>
 
-    <img class="card__image" src="./assets/img/caard.png" alt="Card">
+    <img class="card__image" src="./assets/img/card.png" alt="Card">
 
     <ul class="card__settings">
       <li class="settings-item">
@@ -25,7 +29,7 @@
           <span class="settings-item__proper-description">You can unlock it later</span>
         </div>
 
-        <div class="switch">
+        <div class="settings-item__switch switch">
           <input id="lock-card" class="switch__input switch__shadow" type="checkbox">
           <label for="lock-card"></label>
         </div>
@@ -39,7 +43,7 @@
           <span class="settings-item__proper-description">Enable your card abroad</span>
         </div>
 
-        <div class="switch">
+        <div class="settings-item__switch  switch">
           <input id="payments-abroad" class="switch__input switch__shadow" type="checkbox" checked>
           <label for="payments-abroad"></label>
         </div>
@@ -53,7 +57,7 @@
           <span class="settings-item__proper-description">Enable online transactions</span>
         </div>
 
-        <div class="switch">
+        <div class="settings-item__switch  switch">
           <input id="online-payments" class="switch__input switch__shadow" type="checkbox">
           <label for="online-payments"></label>
         </div>
@@ -67,7 +71,7 @@
           <span class="settings-item__proper-description">Enable ATM withdrawals</span>
         </div>
 
-        <div class="switch">
+        <div class="settings-item__switch  switch">
           <input id="atm-withdrawals" class="switch__input switch__shadow" type="checkbox">
           <label for="atm-withdrawals"></label>
         </div>
