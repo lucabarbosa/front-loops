@@ -1,4 +1,5 @@
 body {
+    background: #f1f4f8;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -8,6 +9,125 @@ a { text-decoration: none; }
 ul, li { margin: 0; padding: 0; }
 li { list-style: none; }
 
+
+
+
+
+/*------------------------------------*\
+    CARD
+\*------------------------------------*/
+
+.card {
+    width: 300px;
+    height: 520px;
+    border: 8px solid #242424;
+    border-radius: 30px;
+    margin: 50px auto;
+    overflow: hidden; 
+}
+
+    /* NOTCH */
+
+    .notch {
+        background: #242424;
+        border-radius: 0 0 10px 10px;
+        margin: 0 auto;
+        height: 20px;
+        width: 50%;
+        position: relative;
+    }
+
+    .notch:before,
+    .notch:after {
+        display: block;
+        content: "";
+        width: 3px;
+        position: absolute;
+    }
+
+    .notch:before {
+        border-right: 5px solid #242424;
+        border-bottom: 4px solid transparent;
+        left: -8px;
+    }
+
+    .notch:after {
+        border-left: 5px solid #242424;
+        border-bottom: 4px solid transparent;
+        right: -8px;
+    }
+
+
+.card__header {
+    background: #3488ED;
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+    padding: 30px 0 0;
+    position: relative;
+    z-index: -1;
+}
+
+.card__header:after {
+    display: block;
+    content: "";
+    border-right: 300px solid #3488ED;
+    border-bottom: 150px solid transparent;    
+    position: absolute;
+    top: 100%;
+}
+
+.card__title {
+    color: #fff;
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.card__image {
+    max-width: 100%;
+    padding: 20px 15px 0;
+}
+
+
+
+
+
+/*------------------------------------*\
+    SETTINGS
+\*------------------------------------*/
+
+.card__settings {
+    padding: 20px 12px;
+}
+
+.settings-item {
+    display: flex;
+    align-items: center;
+}
+
+
+.settings-item:not(:last-child) {
+    margin-bottom: 25px;
+} 
+
+.settings-item__proper {
+    margin: 0 15px;
+}
+
+.settings-item__proper-name {
+    font-size: .9em;
+}
+
+.settings-item__proper-description {
+    color: #a8a8a8;
+    font-size: .8em;
+    font-weight: 500;
+}
+
+.settings-item__switch  {
+    margin-left: auto;
+}
 
 
 
