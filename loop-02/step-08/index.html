@@ -11,5 +11,69 @@
 </head>
 <body>
 
+  <section class="card">
+    <h1 class="card__title">Card</h1>
+
+    <img class="card__image" src="./assets/img/caard.png" alt="Card">
+
+    <ul class="card__settings">
+      <li class="settings-item">
+        <img class="settings-item__icon"  src="./assets/img/lock.svg" alt="Lock Icon">
+        
+        <div class="settings-item__proper">
+          <h3 class="settings-item__proper-name">Lock Card</h3>
+          <span class="settings-item__proper-description">You can unlock it later</span>
+        </div>
+
+        <div class="switch">
+          <input id="lock-card" class="switch__input switch__shadow" type="checkbox">
+          <label for="lock-card"></label>
+        </div>
+      </li>
+
+      <li class="settings-item">
+        <img class="settings-item__icon"  src="./assets/img/plane.svg" alt="Plae Icon">
+        
+        <div class="settings-item__proper">
+          <h3 class="settings-item__proper-name">Payments abroad</h3>
+          <span class="settings-item__proper-description">Enable your card abroad</span>
+        </div>
+
+        <div class="switch">
+          <input id="payments-abroad" class="switch__input switch__shadow" type="checkbox" checked>
+          <label for="payments-abroad"></label>
+        </div>
+      </li>
+
+      <li class="settings-item">
+        <img class="settings-item__icon"  src="./assets/img/laptop.svg" alt="Laptop Icon">
+        
+        <div class="settings-item__proper">
+          <h3 class="settings-item__proper-name">Online payments</h3>
+          <span class="settings-item__proper-description">Enable online transactions</span>
+        </div>
+
+        <div class="switch">
+          <input id="online-payments" class="switch__input switch__shadow" type="checkbox">
+          <label for="online-payments"></label>
+        </div>
+      </li>
+
+      <li class="settings-item">
+        <img class="settings-item__icon"  src="./assets/img/atm.svg" alt="ATM Icon">
+        
+        <div class="settings-item__proper">
+          <h3 class="settings-item__proper-name">ATM withdrawals</h3>
+          <span class="settings-item__proper-description">Enable ATM withdrawals</span>
+        </div>
+
+        <div class="switch">
+          <input id="atm-withdrawals" class="switch__input switch__shadow" type="checkbox">
+          <label for="atm-withdrawals"></label>
+        </div>
+      </li>
+    </ul>
+  </section>
+
 </body>
 </html>
