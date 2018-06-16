@@ -65,7 +65,7 @@ li { list-style: none; }
 }
 
 .aside__link {
-    background: rgba(34, 214, 175, 0.7);
+    background: rgba(34, 214, 175, 0.6);
     color: #fff;
     display: inline-flex;
     align-items: center;
@@ -73,6 +73,11 @@ li { list-style: none; }
     font-weight: 700;
     border-radius: 30px;
     padding: 12px 20px;
+}
+
+.aside__link:hover {
+    background: rgba(34, 214, 175, 1);
+    transition: .4s;
 }
 
 .aside__link-image {
@@ -136,6 +141,11 @@ li { list-style: none; }
         color: #000;
     }
 
+    .menu__link:hover {
+        opacity: 1;
+        transition: .4s;
+    }
+
 
 
 
@@ -153,6 +163,10 @@ li { list-style: none; }
     display: flex;
     align-items: center;
     margin: 15px 0;
+}
+
+.article:first-child {
+    margin-top: 0;
 }
 
 .article:last-child {
