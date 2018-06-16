@@ -11,5 +11,86 @@
 </head>
 <body>
 
+  <section class="card">
+    <header class="card__header">
+      <a class="card__link card__menu" href="#"><img src="./assets/img/menu.svg" alt="Menu Icon"></a>
+      <h1 class="card__title">Google</h1>
+      <a class="card__link card__search" href="#"><img src="./assets/img/search.svg" alt="Search Icon"></a>
+    </header>
+
+    <div class="trip">
+      <div class="trip__cities">
+        <span class="trip__city">
+          Hamburg
+          <span class="dot dot__start-city"></span>
+        </span>
+
+
+        <span class="trip__city">
+          <span class="dot dot__end-city"></span>
+          Cologne
+        </span>
+      </div>
+
+      <div class="trip__item">
+        <span class="trip__title">Time</span>
+        <time class="trip__value">4h 22min</time>
+      </div>
+
+      <div class="trip__item">
+        <span class="trip__title">Distance</span>
+        <span class="trip__value">424km</span>
+      </div>
+
+      <a class="trip__link" href="#"><img src="./assets/img/location.svg" alt="Location Icon"> Open Map</a>
+    </div>
+
+    <section class="route">
+      <h3 class="route__start">Hamburg</h3>
+
+      <ul class="route__list">
+        <li class="route__item">
+          <img class="route__direction" src="./assets/img/direction.svg" alt="Direction Icon">
+
+          <div class="route__details">
+            <span class="route__time">9 min (4.6 km)</span>
+            <span class="route__description">Head northeast on Planforward Bergstrasse</span>
+          </div>
+        </li>
+
+        <li class="route__item">
+          <img class="route__direction" src="./assets/img/direction.svg" alt="Direction Icon">
+
+          <div class="route__details">
+            <span class="route__time">82 km</span>
+            <span class="route__description">Turn right onto Bergstasse</span>
+          </div>
+        </li>
+
+        <li class="route__item">
+          <img class="route__direction" src="./assets/img/direction.svg" alt="Direction Icon">
+
+          <div class="route__details">
+            <span class="route__time">210 m</span>
+            <span class="route__description">Continue onto Schmiedestrasse</span>
+          </div>
+        </li>
+
+        <li class="route__item">
+          <img class="route__street-view" src="./assets/img/streetview.jpg" alt="Street View">
+        </li>
+  
+        <li class="route__item">
+          <img class="route__direction" src="./assets/img/direction.svg" alt="Direction Icon">
+
+          <div class="route__details">
+            <span class="route__time">64 m</span>
+            <span class="route__description">Continue onto Alto Fischmarkt</span>
+          </div>
+        </li>      
+      </ul>
+    </section>
+  </section>
+
 </body>
 </html>
