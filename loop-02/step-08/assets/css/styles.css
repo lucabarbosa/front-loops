@@ -13,5 +13,65 @@ li { list-style: none; }
 
 
 /*------------------------------------*\
-    COMMENT
+    SWITCH
 \*------------------------------------*/
+
+.switch__input {
+    position: absolute;
+    display: none;
+    visibility: hidden;
+}
+
+.switch__input + label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+}
+
+.switch__shadow + label {
+    padding: 0px;
+    width: 55px;
+    height: 30px;
+    background: #fff;
+    border: 1px solid #d4d4d4;
+    border-radius: 60px;
+}
+
+.switch__shadow + label:before,
+.switch__shadow + label:after {
+    display: block;
+    position: absolute;
+    content: "";
+}
+
+.switch__shadow + label:before {
+    top: 0px;   
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background: #fff;
+    border-radius: 60px;
+}
+
+.switch__shadow + label:after {
+    width: 42%;
+    background: #fff;
+    border: 1px solid #d4d4d4;
+    border-radius: 100%;
+    transition: all .4s;
+    top: 2px;   
+    bottom: 2px;
+    left: 2px;
+    right: 2px;
+}
+
+.switch__shadow:checked + label:before {
+    background: #3488ED;
+}
+
+.switch__shadow:checked + label:after {
+    border-color: transparent;
+    transform: translateX(98%);
+}
