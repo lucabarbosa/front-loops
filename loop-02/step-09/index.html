@@ -12,7 +12,7 @@
 <body>
 
   <section class="card">
-    <header class="card__header">
+    <header class="card__header container">
       <a class="card__link card__menu" href="#"><img src="./assets/img/menu.svg" alt="Menu Icon"></a>
       <h1 class="card__title">Google</h1>
       <a class="card__link card__search" href="#"><img src="./assets/img/search.svg" alt="Search Icon"></a>
@@ -32,20 +32,22 @@
         </span>
       </div>
 
-      <div class="trip__item">
-        <span class="trip__title">Time</span>
-        <time class="trip__value">4h 22min</time>
+      <div class="trip__details">
+        <div class="trip__item">
+          <span class="trip__title">Time</span>
+          <time class="trip__value">4h 22min</time>
+        </div>
+
+        <div class="trip__item">
+          <span class="trip__title">Distance</span>
+          <span class="trip__value">424km</span>
+        </div>
       </div>
 
-      <div class="trip__item">
-        <span class="trip__title">Distance</span>
-        <span class="trip__value">424km</span>
-      </div>
-
-      <a class="trip__link" href="#"><img src="./assets/img/location.svg" alt="Location Icon"> Open Map</a>
+      <a class="trip__link" href="#"><img class="trip__link-img" src="./assets/img/location.svg" alt="Location Icon"> Open Map</a>
     </div>
 
-    <section class="route">
+    <section class="route container">
       <h3 class="route__start">Hamburg</h3>
 
       <ul class="route__list">
@@ -77,7 +79,7 @@
         </li>
 
         <li class="route__item">
-          <img class="route__street-view" src="./assets/img/streetview.jpg" alt="Street View">
+          <span class="route__street-view"></span>
         </li>
   
         <li class="route__item">

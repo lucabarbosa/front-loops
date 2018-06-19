@@ -1,5 +1,5 @@
 body {
-    background: #f1f4f8;
+    background: #2479f0;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -9,10 +9,248 @@ a { text-decoration: none; }
 ul, li { margin: 0; padding: 0; }
 li { list-style: none; }
 
+.container {
+    padding: 20px;
+}
+
+
+
+/*------------------------------------*\
+    CARD
+\*------------------------------------*/
+
+.card {
+    background: #fff;
+    margin: 50px auto;
+    width: 330px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__title {
+    font-size: .8em;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.card__link {
+    opacity: .3;
+}
+
 
 
 
 
 /*------------------------------------*\
-    COMMENT
+    TRIP
 \*------------------------------------*/
+
+.trip {
+    background: linear-gradient(
+        rgba(76, 147, 244, 0.75), 
+        rgba(76, 147, 244, 0.75)
+    ), url('../img/map.png') no-repeat center;
+    border-radius: 3px;
+    transform: scale(1.05);
+    position: relative;
+    box-shadow: 0 7px 20px -5px rgba(0, 0, 0, .5);
+    padding: 22px 30px;
+}
+
+    /* TRIP-CITIES */
+
+    .trip__cities {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .trip__city {
+        color: #fff;
+        font-size: .8em;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+    }
+
+    /* TRIP-DETAILS */
+
+    .trip__details {
+        display: flex;
+        padding: 15px 0;
+    }
+
+    .trip__item:not(:last-child) {
+        margin-right: 50px;
+    }
+
+    .trip__title {
+        color: #fff;
+        font-size: .8em;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .trip__value {
+        color: #fff;
+        font-size: .8em;
+        font-weight: 500;
+        margin-left: 2px;
+    }
+
+.trip__link {
+    display: inline-flex;
+    padding: 8px 10px;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    transform: translateY(50%);
+    background: #2479f0;
+    border-radius: 4px;
+    color: #fff;
+    font-size: .8em;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.trip__link-img {
+    margin-right: 7px;
+    width: 1.3em;
+}
+
+
+
+
+
+/*------------------------------------*\
+    DOT
+\*------------------------------------*/
+
+.dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #fff;
+    display: inline-block;
+}
+
+.dot__start-city {
+    margin-left: 15px;
+    position: relative;
+}
+
+.dot__start-city:before {
+    content: url('../img/car.svg');
+    display: block;
+    position: absolute;
+    transform: scale(0.6);
+    left: 32px;
+    bottom: 2px;
+}
+
+.dot__start-city:after {
+    content: "";
+    width: 45px;
+    height: 2px;
+    top: 2.5px;
+    position: absolute;
+    background: #fff;
+    display: block;
+}
+
+.dot__end-city {
+    position: relative;
+    margin-right: 15px;
+}
+
+.dot__end-city:before {
+    content: "";
+    width: 108px;
+    height: 2px;
+    top: 2.5px;
+    right: 100%;
+    position: absolute;
+    background: rgba(255, 255, 255, .6);
+    display: block;
+}
+
+
+
+
+
+/*------------------------------------*\
+    ROUTE
+\*------------------------------------*/
+
+.route {
+    display: flex;
+    flex-direction: column;
+}
+
+.route__start {
+    font-size: .8em;
+    font-weight: 500;
+}
+
+.route__direction {
+    width: 1.2em;
+}
+
+.route__item {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.route__details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.route__time {
+    color: #a9a9a9;
+    font-size: .7em;
+    font-weight: 500;
+}
+
+.route__description {
+    font-size: .75em;
+    font-weight: 400;
+}
+
+.route__street-view {
+    height: 60px;
+    width: 150%;
+    position: relative;
+}
+
+.route__street-view:before {
+    content: url("../img/marker.svg");
+    top: 18px;
+    left: 10px;
+    position: absolute;
+    display: block;
+    z-index: 1; 
+}
+
+.route__street-view:after {
+    content: "";
+    background: 
+        linear-gradient(
+            rgba(0, 0, 0, .4),
+            rgba(0, 0, 0, .2),
+            rgba(0, 0, 0, .4)
+        ),
+        url('../img/streetview.jpg') no-repeat center;
+    background-size: cover;
+    height: 60px;
+    border-radius: 5px 0 0 5px;
+    width: 100%;
+    position: absolute;
+}
