@@ -43,6 +43,11 @@ li { list-style: none; }
     opacity: .3;
 }
 
+.card__link:hover {
+    opacity: 1;
+    transition: .4s;
+}
+
 
 
 
@@ -123,6 +128,10 @@ li { list-style: none; }
     width: 1.3em;
 }
 
+.trip__link:hover {
+    background: #3383f3;
+    transition: .4s;
+}
 
 
 
